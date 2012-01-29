@@ -4,7 +4,7 @@ from base64 import b64encode
 from stat import *
 from datetime import datetime
 sys.stderr = open(os.devnull, 'w')
-password = ""
+password = "78a28e78b897a2a8e9da425f683bbbb2"
 version = "0.666"
 esc = '%s['%chr(27)
 color = esc + "1;36m"
